@@ -102,8 +102,8 @@
     <form id="OnLineLeadForm" method="post"
         action="https://uspresales.businessbywire.com/appg8/ProcessAnonymous/OnlineLeadCapture?x=25xgkuqlsapsn67x4pygd2jkrwjaferq3gqyeakvdq6t6d3dnsxkdf9mjukkdksdpdxz79am5x3yq8k545bh6vt9vhly538wakztqn8r9hydjkzsn4xa">
         <input type="hidden" name="debug" value="1" /> <input type="hidden" name="debugEmail" value="CRM@crmnext.com" />
-        <input type=hidden name="SuccessReturnURL" value="https://crmnext.us/" /> <input type=hidden
-            name="FailureReturnURL" value="http://google.com" />
+        <input type=hidden name="SuccessReturnURL" value="https://crmnext.us" /> <input type=hidden
+            name="FailureReturnURL" value="https://businessnext.com/" />
         <h1 class="contact-heading">Contact Us</h1>
 
 <!-- First Name-->
@@ -112,12 +112,12 @@
             <label for="Salutation">Salutation</label>
             <select id="Salutation" name="Salutation" style="width:100px">
                 <option value="0"></option>
-                <option value="1">Mr.</option>
+                <option selected value="1">Mr.</option>
                 <option value="2">Ms.</option>
                 <option value="3">Dr.</option>
             </select> 
             <label for="FName">First Name</label>
-            <input type="text" id="FName" name="FName">
+            <input type="text" id="FName" name="FName" placeholder="Tom">
         <div class="error-message" id="firstNameErrorMessage" style="display:none;">
             Please enter only alphabetic characters.
         </div>
@@ -128,7 +128,7 @@
         <!-- <input type="text" id="LASTNAME" name="LASTNAME" required maxlength="100" pattern="[A-Za-z ]*"
             oninput="validateName(this, 'lastNameErrorMessage');" /> -->
         <input type="text" id="LName" name="LName" required maxlength="100" pattern="[A-Za-z ]*"
-            oninput="validateName(this, 'lastNameErrorMessage');" />
+            oninput="validateName(this, 'lastNameErrorMessage');"  placeholder="Johnson" />
         <div class="error-message" id="lastNameErrorMessage" style="display:none;">
             Please enter only alphabetic characters.
         </div>
@@ -136,13 +136,13 @@
 
         <label for="Email">Email</label>
         <input type="email" id="Email" name="Email" required maxlength="100"
-            oninput="validateEmail(this, 'emailErrorMessage');" />
+            oninput="validateEmail(this, 'emailErrorMessage');" placeholder="tjohnson@demo.com" />
         <div class="error-message" id="emailErrorMessage" style="display:none;">
             Please enter a valid email address (Eg. abc@xyz.com).
         </div>
         <label for="MobPhone">Mobile Number</label>
         <input type="tel" id="MobPhone" name="MobPhone" required oninput="validateMobile(this, 'mobileErrorMessage');"
-            maxlength="12" />
+            maxlength="12" placeholder="4356719412" />
         <div class="error-message" id="mobileErrorMessage" style="display:none;">
             Please enter a valid US mobile number.
         </div>
@@ -284,4 +284,5 @@
         }
     </script>
 </body>
+
 </HTML>
